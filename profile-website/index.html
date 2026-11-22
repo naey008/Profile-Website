@@ -1,0 +1,269 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="A simple personal profile website.">
+
+    <title>My Personal Profile</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Skip Navigation -->
+    <a href="#main-content" class="skip-link">
+        Skip to main content
+    </a>
+
+    <!-- Header -->
+    <header class="site-header" id="home">
+        <div class="header-container">
+
+            <a href="#home" class="logo" aria-label="Home">
+                PROFILE<span>.</span>
+            </a>
+
+            <!-- Navigation -->
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main id="main-content">
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+
+                <p class="hero-subtitle">
+                    HELLO, WELCOME TO MY PAGE
+                </p>
+
+                <h1>
+                    A Little About <br>
+                    <span>Myself.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Welcome to my personal space!
+                    Here you can learn more about me,
+                    my interests, and my skills.
+                </p>
+
+                <a href="#about" class="primary-button">
+                    Discover More
+                </a>
+
+            </div>
+
+            <div class="hero-image">
+                <img
+                    src="images/profile-placeholder.jpg"
+                    alt="Placeholder illustration for a personal profile photo"
+                >
+                <div class="image-decoration"></div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section-padding" id="about">
+
+            <div class="section-heading">
+                <p class="section-subtitle">GET TO KNOW ME</p>
+                <h2>About Me</h2>
+            </div>
+
+            <div class="about-content">
+
+                <div class="about-text">
+                    <h3>Hello, I'm Your Name!</h3>
+
+                    <p>
+                        I am a person who enjoys learning new things
+                        and exploring different ideas.
+                        I am interested in technology, creativity,
+                        and personal development.
+                    </p>
+
+                    <p>
+                        This website is a little introduction
+                        about myself, my interests, and the skills
+                        I continue to develop.
+                    </p>
+
+                    <a href="#contact" class="text-link">
+                        Let's Connect →
+                    </a>
+                </div>
+
+                <div class="about-card">
+                    <span class="card-icon">✦</span>
+                    <h3>A Little Note</h3>
+                    <p>
+                        Always learning, always growing,
+                        and always curious.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills section-padding" id="skills">
+
+            <div class="section-heading">
+                <p class="section-subtitle">WHAT I CAN DO</p>
+                <h2>My Skills</h2>
+
+                <p class="section-description">
+                    Here are some skills and abilities
+                    that I continue to develop.
+                </p>
+            </div>
+
+            <div class="skills-grid">
+
+                <article class="skill-card">
+                    <span class="skill-number">01</span>
+                    <h3>HTML</h3>
+                    <p>
+                        Creating structured web pages
+                        using HTML elements.
+                    </p>
+                </article>
+
+                <article class="skill-card">
+                    <span class="skill-number">02</span>
+                    <h3>CSS</h3>
+                    <p>
+                        Designing layouts and styling
+                        responsive websites.
+                    </p>
+                </article>
+
+                <article class="skill-card">
+                    <span class="skill-number">03</span>
+                    <h3>Communication</h3>
+                    <p>
+                        Sharing ideas and communicating
+                        effectively with others.
+                    </p>
+                </article>
+
+                <article class="skill-card">
+                    <span class="skill-number">04</span>
+                    <h3>Problem Solving</h3>
+                    <p>
+                        Analyzing problems and finding
+                        suitable solutions.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section-padding" id="contact">
+
+            <div class="contact-container">
+
+                <div class="contact-info">
+                    <p class="section-subtitle">
+                        GET IN TOUCH
+                    </p>
+
+                    <h2>Let's Connect!</h2>
+
+                    <p>
+                        Have a question or want to say hello?
+                        Feel free to send a message using
+                        the contact form.
+                    </p>
+
+                    <span class="contact-decoration">
+                        ✦ ✦ ✦
+                    </span>
+                </div>
+
+                <!-- Contact Form -->
+                <form class="contact-form" action="#" method="get">
+
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your name"
+                            autocomplete="name"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            autocomplete="email"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="5"
+                            placeholder="Write your message here..."
+                            required
+                        ></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-button">
+                        Send Message →
+                    </button>
+
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+
+        <a href="#home" class="footer-logo">
+            PROFILE<span>.</span>
+        </a>
+
+        <p>
+            Thank you for visiting my personal website!
+        </p>
+
+        <p class="copyright">
+            &copy; 2026 My Personal Profile. All rights reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>
